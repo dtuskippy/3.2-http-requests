@@ -16,6 +16,27 @@ app.get('/quinn', (req, res) => {
   res.send("<h1>Quinn the Bin!</h1><p>Quinn is a sugar bear eating honey from a furry bowl!</p>");
 })
 
+app.post('/quinn', (req, res) => {
+  res.sendStatus(201); 
+})
+
+app.put('/quinn', (req, res) => {
+  res.sendStatus(200); 
+})
+
+app.patch('/quinn', (req, res) => {
+  res.sendStatus(200); 
+})
+
+app.delete('/quinn', (req, res) => {
+  res.sendStatus(200); 
+})
+
+
+
+
+
+
 app.listen(port, () => {
   console.log(`Server running on port ${port}.`);
 });
